@@ -24,8 +24,8 @@ class StackQuestion3Test {
         assertArrayEquals(expectedExample1Output, example1Output);
 
         int example2FunctionsInput = 1;
-        List<String> example2LogsInput = List.of("0:start:0","0:start:2","0:end:5","1:start:6","1:end:6","0:end:7");
-        int[] expectedExample2Output = {3,4};
+        List<String> example2LogsInput = List.of("0:start:0","0:start:2","0:end:5","0:start:6","0:end:6","0:end:7");
+        int[] expectedExample2Output = {8};
         int[] example2Output = stackQuestion3.exclusiveTime(example2FunctionsInput, example2LogsInput);
         assertArrayEquals(expectedExample2Output, example2Output);
 
