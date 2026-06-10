@@ -9,7 +9,7 @@ public class StackQuestion3 {
         int previousTime = 0;
         int[] result = new int[n];
         Deque<Integer> stack = new ArrayDeque<>();
-        
+
         for (String log : logs) {
             String[] threadInformation = log.split(":");
             int functionId = Integer.parseInt(threadInformation[0]);
