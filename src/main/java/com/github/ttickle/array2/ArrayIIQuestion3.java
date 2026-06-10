@@ -5,7 +5,7 @@ import com.github.ttickle.Solution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Question3 implements Solution {
+public class ArrayIIQuestion3 implements Solution {
 
     /**
      * Solution to Array II Question 3 which makes the value at the index of the value

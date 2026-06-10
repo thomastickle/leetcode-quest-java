@@ -5,24 +5,24 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Question3Test {
-    private Question3 question3;
+class ArrayQuestion3Test {
+    private ArrayQuestion3 arrayQuestion3;
 
     @BeforeEach
     void setUp() {
-        this.question3 = new Question3();
+        this.arrayQuestion3 = new ArrayQuestion3();
     }
 
     @Test
     void findMaxConsecutiveOnes() {
         int[] example1Input = {1,1,0,1,1,1};
         int expectedExample1Output = 3;
-        assertEquals(expectedExample1Output, question3.findMaxConsecutiveOnes(example1Input));
+        assertEquals(expectedExample1Output, arrayQuestion3.findMaxConsecutiveOnes(example1Input));
 
 
         int[] example2Input = {1,0,1,1,0,1};
         int expectedExample2Output = 2;
-        assertEquals(expectedExample2Output, question3.findMaxConsecutiveOnes(example2Input));
+        assertEquals(expectedExample2Output, arrayQuestion3.findMaxConsecutiveOnes(example2Input));
     }
 
 }

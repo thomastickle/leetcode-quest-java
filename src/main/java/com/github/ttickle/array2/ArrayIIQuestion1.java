@@ -1,6 +1,6 @@
 package com.github.ttickle.array2;
 
-public class Question1 {
+public class ArrayIIQuestion1 {
 
     /**
      * Finds and returns the duplicated number and missing number.

@@ -3,7 +3,7 @@ package com.github.ttickle.stack;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Question2 {
+public class StackQuestion2 {
     public int evalRPN(String[] tokens) {
         Deque<Integer> stack = new ArrayDeque<>();
 

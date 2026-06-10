@@ -2,7 +2,7 @@ package com.github.ttickle.array1;
 
 import com.github.ttickle.Solution;
 
-public class Question3 implements Solution {
+public class ArrayQuestion3 implements Solution {
 
     /**
      * Solution to question 3 to find the max nubmer of 1s.

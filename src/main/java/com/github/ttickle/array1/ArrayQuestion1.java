@@ -2,7 +2,7 @@ package com.github.ttickle.array1;
 
 import com.github.ttickle.Solution;
 
-public class Question1 implements Solution {
+public class ArrayQuestion1 implements Solution {
 
     /**
      * Concat the array with itself.  This approach uses the System.arraycopy, but it could

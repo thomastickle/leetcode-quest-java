@@ -2,7 +2,7 @@ package com.github.ttickle.array1;
 
 import com.github.ttickle.Solution;
 
-public class Question2 implements Solution {
+public class ArrayQuestion2 implements Solution {
 
     /**
      * A method of shuffling an array starting at the midpoint specified by n.  This method does not do bounds

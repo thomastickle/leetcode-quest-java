@@ -2,7 +2,7 @@ package com.github.ttickle.array2;
 
 import com.github.ttickle.Solution;
 
-public class Question2 implements Solution {
+public class ArrayIIQuestion2 implements Solution {
 
     /**
      * Find the count of numbers smaller than the current number.  This is an n runtime solution as we avoid the inner
