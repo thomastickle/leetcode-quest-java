@@ -1,18 +1,23 @@
 package com.github.ttickle.stack;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Question2 {
     public int evalRPN(String[] tokens) {
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
 
         for (String token : tokens) {
             switch (token) {
                 case "*" -> {
-                    stack.push(stack.pop() * stack.pop());
+                    int second = stack.pop();
+                    int first = stack.pop();
+                    stack.push(first * second);
                 }
                 case "+" -> {
-                    stack.push(stack.pop() + stack.pop());
+                    int second = stack.pop();
+                    int first = stack.pop();
+                    stack.push(first + second);
                 }
                 case "/" -> {
                     int second = stack.pop();
@@ -24,7 +29,7 @@ public class Question2 {
                     int first = stack.pop();
                     stack.push(first - second);
                 }
-                default -> stack.push(Integer.valueOf(token));
+                default -> stack.push(Integer.parseInt(token));
             }
         }
         return stack.pop();
