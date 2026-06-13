@@ -8,12 +8,28 @@
     <packaging>jar</packaging>
 
     <name>leetcode-quest-java</name>
-    <url>http://maven.apache.org</url>
+
+    <description>Collection of LeetCode Question Solutions Implemented With Java</description>
+
+    <url>hhttps://github.com/thomastickle/leetcode-quest-java</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>git@github.com:thomastickle/leetcode-quest-java.git</connection>
+        <developerConnection>git@github.com:thomastickle/leetcode-quest-java.git</developerConnection>
+        <url>https://github.com/thomastickle/leetcode-quest-java</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>25</maven.compiler.source>
-        <maven.compiler.target>25</maven.compiler.target>
+        <maven.compiler.release>25</maven.compiler.release>
     </properties>
 
     <dependencies>
@@ -29,8 +45,14 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.0</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.5.4</version>
             </plugin>
         </plugins>
     </build>
