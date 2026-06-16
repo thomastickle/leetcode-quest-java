@@ -3,6 +3,8 @@ package com.github.ttickle.linkedlist;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static com.github.ttickle.linkedlist.LinkedListUtil.assertListEquals;
+import static com.github.ttickle.linkedlist.LinkedListUtil.createList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LinkedListQuestion1Test {
@@ -27,26 +29,5 @@ class LinkedListQuestion1Test {
         assertListEquals(createList(1, 2, 3), result2);
     }
 
-    private ListNode createList(int... values) {
-        ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
 
-        for (int value : values) {
-            current.next = new ListNode(value);
-            current = current.next;
-        }
-
-        return dummy.next;
-    }
-
-    private void assertListEquals(ListNode expected, ListNode actual) {
-        while (expected != null && actual != null) {
-            assertEquals(expected.val, actual.val);
-            expected = expected.next;
-            actual = actual.next;
-        }
-
-        assertNull(expected);
-        assertNull(actual);
-    }
 }
